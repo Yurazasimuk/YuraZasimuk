@@ -1,4 +1,4 @@
-## Yura zasimuk 
+## Yura Zasimuk 
 badminton counter strike 2, programming, listening to music
 
 Посилання
