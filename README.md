@@ -1,6 +1,9 @@
 ## Yura zasimuk 
 badminton counter strike 2, programming, listening to music
 
+Посилання
+https://docs.google.com/document/d/17BG2XxsVBrexh-nliiu6cszA3wmBdJ-QgQXO-_JAvyM/edit?pli=1&tab=t.0
+
 
 👋
 
