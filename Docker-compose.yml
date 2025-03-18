@@ -1,9 +1,7 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  python-service:
-    build:
+  logger_service:
+    build: .
     volumes:
       - ./logs:/task/logs
-    ports:
-      - "5000:5000"

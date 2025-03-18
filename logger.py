@@ -1,27 +1,26 @@
 import logging
-import os
 import time
-from datetime import datetime
+import os
 
-# Шлях до папки для логів
-log_dir = "/app/logs"
-os.makedirs(log_dir, exist_ok=True)
 
-# Налаштування логування
-log_file = os.path.join(log_dir, "task.log")
-logging.basicConfig(filename=log_file, filemode='w', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+os.makedirs("logs", exist_ok=True)
 
-start_time = time.time()  # Фіксуємо час початку
 
-# Основний цикл роботи програми (1 хвилина)
-while time.time() - start_time < 60:
-    elapsed_time = round(time.time() - start_time, 2)  # Час у секундах
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Поточний час
+logging.basicConfig(
+    filename="logs/task.log",
+    filemode="w",
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-    logging.info(f"Програма працює: {elapsed_time} секунд. Поточний час: {current_time}")
+start_time = time.time()
+logging.info("Task started")
 
-    time.sleep(5)  # Затримка 5 секунд
+while True:
+    elapsed_time = time.time() - start_time
+    if elapsed_time > 60:
+        break
+    logging.info(f"Program running for {elapsed_time:.2f} seconds")
+    time.sleep(5)
 
-# Запис фінального повідомлення
 logging.error("Task completed")
