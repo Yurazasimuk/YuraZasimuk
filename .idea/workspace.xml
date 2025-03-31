@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5552e487-4dbf-480a-9274-93ebda13d885" name="Changes" comment="add 7.1 robota" />
+    <list default="true" id="5552e487-4dbf-480a-9274-93ebda13d885" name="Changes" comment="add 7.2 robota" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +44,7 @@
     "Python.write_trains.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "sd-7.1",
+    "git-widget-placeholder": "7.2",
     "last_opened_file_path": "C:/Users/classuser206/Desktop/YuraZasimuk/.venv",
     "settings.editor.selected.configurable": "vcs.Git"
   },
@@ -91,12 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743402137092</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add 7.2 robota">
+      <option name="closed" value="true" />
+      <created>1743403002008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743403002008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completed 2 charts in 5 practica" />
     <MESSAGE value="add 7.1 robota" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 7.1 robota" />
+    <MESSAGE value="add 7.2 robota" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 7.2 robota" />
   </component>
 </project>
