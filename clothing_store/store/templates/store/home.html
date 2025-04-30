@@ -1,0 +1,17 @@
+{% extends 'store/base.html' %}
+{% block content %}
+<h2>Categories</h2>
+<ul>{% for c in categories %}
+  <li><a href="{% url 'clothing_by_category' c.id %}">{{ c.name }}</a></li>
+{% endfor %}</ul>
+
+<h2>All Clothes</h2>
+<ul>{% for item in clothes %}
+  <li>
+    <a href="{% url 'clothing_detail' item.id %}">{{ item.name }}</a> – {{ item.price }}
+    {% if user.is_authenticated %}
+      | <a href="{% url 'add_to_cart' item.id %}">Add to cart</a>
+    {% endif %}
+  </li>
+{% endfor %}</ul>
+{% endblock %}
