@@ -1,0 +1,9 @@
+<!-- store/templates/store/my_orders.html -->
+<h1>Мої замовлення</h1>
+<ul>
+    {% for order in orders %}
+        <li>{{ order.created_at }} - {{ order.total_price }} грн</li>
+    {% empty %}
+        <li>У вас немає замовлень</li>
+    {% endfor %}
+</ul>

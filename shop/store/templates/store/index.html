@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин одягу</title>
+</head>
+<body>
+    <h1>Вітаємо в нашому магазині!</h1>
+    <div>
+        {% if user.is_authenticated %}
+            <p>Привіт, {{ user.username }}! <a href="{% url 'logout' %}">Вийти</a></p>
+        {% else %}
+            <a href="{% url 'login' %}">Увійти</a> | <a href="{% url 'register' %}">Зареєструватися</a>
+        {% endif %}
+    </div>
+
+    <h2>Наші товари:</h2>
+    <div>
+        {% for item in clothing_items %}
+            <div>
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.description }}</p>
+                <p>Ціна: {{ item.price }} грн</p>
+                <a href="{% url 'clothing_item_detail' item.id %}">Переглянути товар</a> |
+                <a href="{% url 'add_to_cart' item.id %}">Додати в корзину</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

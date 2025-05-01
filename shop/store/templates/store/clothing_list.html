@@ -1,0 +1,21 @@
+<!-- templates/store/clothing_list.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список одягу</title>
+</head>
+<body>
+    <h1>Усі предмети одягу</h1>
+    <ul>
+        {% for item in clothing_items %}
+            <li>
+                <a href="{% url 'clothing_detail' item.id %}">{{ item.name }}</a> - {{ item.price }} грн
+            </li>
+        {% empty %}
+            <li>Немає предметів одягу для відображення.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
